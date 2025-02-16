@@ -1,6 +1,7 @@
 ﻿using api.Data;
 using api.DTOMappers;
 using api.DTOs.Stocks;
+using api.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 namespace api.Controllers
@@ -10,9 +11,11 @@ namespace api.Controllers
     public class StockController : ControllerBase
     {
         private readonly ApplicationDBContext _context;//read only as we don't want to modify this ofject
-        public StockController(ApplicationDBContext context)
+        private readonly IStockRepository _stockRepository;
+        public StockController(ApplicationDBContext context,IStockRepository stockRepository)
         {
             _context = context;
+            _stockRepository = stockRepository;
         }
 
         [HttpGet]
@@ -20,9 +23,9 @@ namespace api.Controllers
         {
             //var stock = _context.Stock.ToList();// will return a list of Stock Entity class
 
-            var stock = await _context.Stock.ToListAsync();
+            var stock = await _stockRepository.GetAll();
              var st =   stock.Select(x => x.ToStockDto()); // now it will return an array of StockDto class
-            return Ok(st);
+             return Ok(st);
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetStockDetailsById([FromRoute]int id) 
