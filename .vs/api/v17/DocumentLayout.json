@@ -1,0 +1,299 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|solutionrelative:controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\dtos\\stocks\\createstockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|solutionrelative:dtos\\stocks\\createstockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\dtos\\stocks\\updatestockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|solutionrelative:dtos\\stocks\\updatestockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|c:\\users\\haribhajan.narwaria\\desktop\\projects\\api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Migrations\\20250211134143_FK_Cascading_SetNull.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250211134143_FK_Cascading_SetNull.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\migrations\\20250209090938_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|solutionrelative:migrations\\20250209090938_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|solutionrelative:migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\dtomappers\\cretastockdtotomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|solutionrelative:dtomappers\\cretastockdtotomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|solutionrelative:models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\dtos\\stocks\\stockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|solutionrelative:dtos\\stocks\\stockdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\dtomappers\\stockmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|solutionrelative:dtomappers\\stockmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|solutionrelative:api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|solutionrelative:models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EAF35C02-3B45-4FE7-8086-1EA4E27F1132}|api.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250211134143_FK_Cascading_SetNull.cs",
+              "DocumentMoniker": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Migrations\\20250211134143_FK_Cascading_SetNull.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250211134143_FK_Cascading_SetNull.cs",
+              "ToolTip": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Migrations\\20250211134143_FK_Cascading_SetNull.cs",
+              "RelativeToolTip": "Migrations\\20250211134143_FK_Cascading_SetNull.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T13:41:43.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Data\\ApplicationDBContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDBContext.cs",
+              "ToolTip": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Data\\ApplicationDBContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDBContext.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T13:08:20.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateStockDto.cs",
+              "DocumentMoniker": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\DTOs\\Stocks\\UpdateStockDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Stocks\\UpdateStockDto.cs",
+              "ToolTip": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\DTOs\\Stocks\\UpdateStockDto.cs",
+              "RelativeToolTip": "DTOs\\Stocks\\UpdateStockDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T10:17:54.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateStockDto.cs",
+              "DocumentMoniker": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\DTOs\\Stocks\\CreateStockDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Stocks\\CreateStockDto.cs",
+              "ToolTip": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\DTOs\\Stocks\\CreateStockDto.cs",
+              "RelativeToolTip": "DTOs\\Stocks\\CreateStockDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T10:16:54.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StockController.cs",
+              "DocumentMoniker": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Controllers\\StockController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StockController.cs",
+              "ToolTip": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Controllers\\StockController.cs",
+              "RelativeToolTip": "Controllers\\StockController.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAAAFAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T12:24:10.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20250209090938_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Migrations\\20250209090938_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250209090938_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Migrations\\20250209090938_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20250209090938_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T13:06:21.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDBContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Migrations\\ApplicationDBContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\ApplicationDBContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Migrations\\ApplicationDBContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\ApplicationDBContextModelSnapshot.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T13:06:08.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CretaStockDtoToModel.cs",
+              "DocumentMoniker": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\DTOMappers\\CretaStockDtoToModel.cs",
+              "RelativeDocumentMoniker": "DTOMappers\\CretaStockDtoToModel.cs",
+              "ToolTip": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\DTOMappers\\CretaStockDtoToModel.cs",
+              "RelativeToolTip": "DTOMappers\\CretaStockDtoToModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T10:22:47.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StockDto.cs",
+              "DocumentMoniker": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\DTOs\\Stocks\\StockDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Stocks\\StockDto.cs",
+              "ToolTip": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\DTOs\\Stocks\\StockDto.cs",
+              "RelativeToolTip": "DTOs\\Stocks\\StockDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T07:13:47.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-09T13:16:14.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StockMapper.cs",
+              "DocumentMoniker": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\DTOMappers\\StockMapper.cs",
+              "RelativeDocumentMoniker": "DTOMappers\\StockMapper.cs",
+              "ToolTip": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\DTOMappers\\StockMapper.cs",
+              "RelativeToolTip": "DTOMappers\\StockMapper.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T07:16:01.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Stock.cs",
+              "DocumentMoniker": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Models\\Stock.cs",
+              "RelativeDocumentMoniker": "Models\\Stock.cs",
+              "ToolTip": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Models\\Stock.cs",
+              "RelativeToolTip": "Models\\Stock.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAxwA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T07:08:04.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "api",
+              "DocumentMoniker": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\api.csproj",
+              "RelativeDocumentMoniker": "api.csproj",
+              "ToolTip": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\api.csproj",
+              "RelativeToolTip": "api.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-10T07:15:14.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAAsAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T13:16:27.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "Models\\Comment.cs",
+              "ToolTip": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\Models\\Comment.cs",
+              "RelativeToolTip": "Models\\Comment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T07:15:01.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\haribhajan.narwaria\\Desktop\\Projects\\api\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-09T06:38:41.955Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
