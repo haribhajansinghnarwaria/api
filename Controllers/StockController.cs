@@ -4,17 +4,18 @@ using api.DTOs.Stocks;
 using api.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Validations;
 namespace api.Controllers
 {
     [Route("api/[Controller]")]
     [ApiController]
     public class StockController : ControllerBase
     {
-        private readonly ApplicationDBContext _context;//read only as we don't want to modify this ofject
+        //private readonly ApplicationDBContext _context;//read only as we don't want to modify this ofject
         private readonly IStockRepository _stockRepository;
-        public StockController(ApplicationDBContext context,IStockRepository stockRepository)
+        public StockController(IStockRepository stockRepository)
         {
-            _context = context;
+            //_context = context;
             _stockRepository = stockRepository;
         }
 
@@ -30,7 +31,8 @@ namespace api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetStockDetailsById([FromRoute]int id) 
         { 
-            var stock = await _context.Stock.FindAsync(id);
+            //var stock = await _context.Stock.FindAsync(id);
+            var stock = await _stockRepository.GetStockDetailsById(id);
 
             if (stock == null)
             {
@@ -45,13 +47,10 @@ namespace api.Controllers
         public async Task<IActionResult> CreateStock([FromBody] CreateStockDto createStockDto)
         {
            var  _stockModel = CretaStockDtoToModel.CreateStockDtoToModelMaper(createStockDto);
-            using (var transaction = _context.Database.BeginTransaction())
+            var check = await _stockRepository.CreateStock(_stockModel);
+            if (check == null)
             {
-               await  _context.Database.ExecuteSqlRawAsync("SET IDENTITY_INSERT Stock ON;");
-               await _context.Stock.AddAsync(_stockModel);
-               await _context.SaveChangesAsync();
-               await _context.Database.ExecuteSqlRawAsync("SET IDENTITY_INSERT Stock OFF;");
-               await transaction.CommitAsync();
+                return BadRequest("Stock Not created due to some errorS");
             }
 
             return Ok(createStockDto);
@@ -60,18 +59,22 @@ namespace api.Controllers
         [HttpPost("{id}")]
         public async Task<IActionResult> UpadeStock([FromRoute] int id, [FromBody] UpdateStockDto updateStockDto)
         {
-            var stockModel = await _context.Stock.FirstOrDefaultAsync(x => x.StockId == id);
+            //var stockModel = await _context.Stock.FirstOrDefaultAsync(x => x.StockId == id);
+            var stockModel =  await _stockRepository.GetStockDetailsById(id);
             if (stockModel == null)
             {
                 return NotFound($"Did not found object with object Id {id}");
             }
-            stockModel.Symbol = updateStockDto.Symbol;
-            stockModel.MarketCap = updateStockDto.MarketCap;
-            stockModel.Purchase = updateStockDto.Purchase;
-            stockModel.CompanyName = updateStockDto.CompanyName;
-            stockModel.LastDiv  = updateStockDto.LastDiv;
-            stockModel.Industry = updateStockDto.Industry;
-           await _context.SaveChangesAsync();
+            var stock = await _stockRepository.UpdateStock(stockModel,updateStockDto );
+           // stockModel.Symbol = updateStockDto.Symbol;
+           // stockModel.MarketCap = updateStockDto.MarketCap;
+           // stockModel.Purchase = updateStockDto.Purchase;
+           // stockModel.CompanyName = updateStockDto.CompanyName;
+           // stockModel.LastDiv  = updateStockDto.LastDiv;
+           // stockModel.Industry = updateStockDto.Industry;
+           //await _context.SaveChangesAsync();
+           if (stock == null) return BadRequest("Not updated Correctly");
+
             return Ok(updateStockDto);
         }
 
@@ -79,10 +82,14 @@ namespace api.Controllers
         [Route("{id}")]
         public async Task<IActionResult> DeleteStock([FromRoute] int id)
         {
-            var stock = await _context.Stock.FirstOrDefaultAsync(x => x.StockId == id);
+            //var stock = await _context.Stock.FirstOrDefaultAsync(x => x.StockId == id);
+            var stock = await _stockRepository.GetStockDetailsById(id); 
             if (stock == null) return NotFound();
-            _context.Stock.Remove(stock);
-            await _context.SaveChangesAsync();
+
+            var isDelete = await _stockRepository.DeleteStock(stock);
+            //_context.Stock.Remove(stock);
+            //await _context.SaveChangesAsync();
+            if (!isDelete) return BadRequest();
             return NoContent();
         }
     }
