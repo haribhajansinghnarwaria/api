@@ -2,6 +2,7 @@
 using api.DTOs.Stocks;
 using api.Helper;
 using api.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 namespace api.Controllers
 {
@@ -18,6 +19,7 @@ namespace api.Controllers
         }
 
         [HttpGet]
+        [Authorize] // adding this attribute to enforce authorization by forcefully using JWT to access this method.
         public async Task<IActionResult> GetAll([FromQuery] queryObject queryObject)
         {
             //var stock = _context.Stock.ToList();// will return a list of Stock Entity class

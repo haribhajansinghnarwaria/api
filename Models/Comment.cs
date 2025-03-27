@@ -1,5 +1,8 @@
-﻿namespace api.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace api.Models
 {
+    [Table("Comments")]
     public class Comment
     {
         public int CommentId { get; set; }
