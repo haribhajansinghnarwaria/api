@@ -8,8 +8,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-
-
+using StackExchange.Redis;
+using NRedisStack;
+using NRedisStack.RedisStackCommands;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -24,9 +27,20 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 }
 );
+//Adding Redis Cache service
+//var redisConnectionString = builder.Configuration.GetSection("Redis")["ConnectionString"];
+//ConfigurationOptions conf = new ConfigurationOptions {
+//    EndPoints = { "localhost:6379" },
+//    User = "yourUsername",
+//    Password = "yourPassword"
+//};
+//var redis = ConnectionMultiplexer.Connect(redisConnectionString);
+builder.Services.AddStackExchangeRedisCache(options => { options.Configuration = builder.Configuration.GetConnectionString("Redis"); });
+//builder.Services.AddSingleton(redis);
 builder.Services.AddScoped<IStockRepository, StockRepository>();
 builder.Services.AddScoped<ICommentRepository, CommentRepository>();
 builder.Services.AddScoped<ITokenService, TokenService>();//DI of Token Service
+builder.Services.AddScoped<IRedisCacheService, RedisCacheService>();//DI for Redis
 builder.Services.AddControllers().AddNewtonsoftJson(
     options =>
     {

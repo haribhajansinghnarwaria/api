@@ -2,8 +2,10 @@
 using api.DTOs.Stocks;
 using api.Helper;
 using api.Interfaces;
+using api.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 namespace api.Controllers
 {
     [Route("api/[Controller]")]
@@ -12,10 +14,12 @@ namespace api.Controllers
     {
         //private readonly ApplicationDBContext _context;//read only as we don't want to modify this ofject
         private readonly IStockRepository _stockRepository;
-        public StockController(IStockRepository stockRepository)
+        private readonly IRedisCacheService _redisCacheService;
+        public StockController(IStockRepository stockRepository, IRedisCacheService redisCacheService)
         {
             //_context = context;
             _stockRepository = stockRepository;
+            _redisCacheService = redisCacheService;
         }
 
         [HttpGet]
@@ -32,7 +36,15 @@ namespace api.Controllers
         public async Task<IActionResult> GetStockDetailsById([FromRoute]int id) 
         { 
             //var stock = await _context.Stock.FindAsync(id);
-            var stock = await _stockRepository.GetStockDetailsById(id);
+            var stockIdKey = "stock" + id;
+            var stock = await _redisCacheService.GetDataAsync<Stock>(stockIdKey);
+            if (stock == null)
+            {
+                 stock = await _stockRepository.GetStockDetailsById(id);
+                 await _redisCacheService.SetDataAsync(stockIdKey, stock);
+
+            }
+
 
             if (stock == null)
             {
